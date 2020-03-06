@@ -1,0 +1,39 @@
+<div class="mb-5 pt-5">
+  <h1 class="text-center">
+    {{ pokemon.name.charAt(0).toUpperCase() + pokemon.name.substring(1) }}
+  </h1>
+  <div class="row mt-5 text-center">
+    <!-- <div class="col-sm-6  col-md-5 offset-2 text-center"> -->
+    <img
+      src="{{ pokemon.sprites.front_default }}"
+      alt="pokemon"
+      class="pokemon-picture"
+    />
+    <!-- </div> -->
+  </div>
+  <hr />
+  <section class="mt-5">
+    <div class="row text-center">
+      <div class="col-sm-6">
+        <table>
+          <tr>
+            <th>Types:</th>
+          </tr>
+          <tr *ngFor="let types of pokemon.types">
+            <td>{{ types.type.name }}</td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-sm-6">
+        <table>
+          <tr>
+            <th>Base stats:</th>
+          </tr>
+          <tr>
+            <td>{{ pokemon.stats[0].base_stat }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+</div>

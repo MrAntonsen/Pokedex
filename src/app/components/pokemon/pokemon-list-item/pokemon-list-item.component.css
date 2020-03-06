@@ -1,0 +1,19 @@
+.card {
+  width: 25vh;
+  margin: 4rem;
+  border: 0.3rem solid darkcyan;
+}
+.btn {
+  border: 4px solid rgb(37, 0, 245);
+  background-color: rgb(163, 230, 230);
+  color: rgb(37, 0, 245);
+}
+.btn:hover {
+  border: 4px solid rgb(241, 255, 50);
+  background-color: rgb(33, 35, 141);
+  color: rgb(241, 255, 50);
+}
+
+.card:hover {
+  border: 0.3rem solid rgb(33, 35, 141);
+}

@@ -1,0 +1,13 @@
+h1 {
+  font-family: "Acme", sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+.list-group-item {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  background-color: rgba(252, 245, 245, 0.568);
+}
+.list-group-item:hover {
+  background-color: #fff;
+}

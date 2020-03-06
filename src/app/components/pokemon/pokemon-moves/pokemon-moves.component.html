@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-12 text-center">
+    <h1>Moves you can learn the pokemon</h1>
+    <ul class="list-group text-center">
+      <li class="list-group-item" *ngFor="let moves of pokemon.moves">
+        {{
+          moves.move.name.charAt(0).toUpperCase() + moves.move.name.substring(1)
+        }}
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="card text-center">
+  <img
+    src="{{ pokemon.sprites.front_default }}"
+    class="card-img-top"
+    alt="..."
+  />
+  <div class="card-body">
+    <h5 class="card-title">
+      {{ pokemon.name.charAt(0).toUpperCase() + pokemon.name.substring(1) }}
+    </h5>
+
+    <a routerLink="details" class="btn btn-primary" (click)="viewDetailsClick()"
+      >View Details</a
+    >
+  </div>
+</div>
